@@ -37,12 +37,14 @@ tree.insert(4)
 tree.insert(6)
 tree.insert(8)
 '''
+# Factorial Function
 def factorial(n):
     if n == 0:
         return 1
     else:
         return n * factorial(n-1)
 
+# Catalan Number Function
 def count(n):
     if n == 0:
         return 1
@@ -50,5 +52,6 @@ def count(n):
         cat = factorial(2*n) / (factorial(n+1) * factorial(n))
         return cat
 
+# Usage example
 n = 6
 print(count(n))
